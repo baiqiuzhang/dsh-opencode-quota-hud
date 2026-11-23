@@ -1,5 +1,7 @@
 # dsh-opencode-quota-hud
 
+**[English](README.en.md) | 中文**
+
 > **衍生版声明**：本项目是 [`dsh-opencode-usage-settings`](https://www.npmjs.com/package/dsh-opencode-usage-settings)（作者锈者之家，MIT）的派生版本，基线 **1.2.0**。
 > 上游 npm 已到 1.4.1（新增节假日/官方价格对比），**本分支未合并**；宿主半边（`index.js`）保留了 1.2.0 的实现并加了账号池读取，浏览器半边（`client.js`）为重写。
 > 修改部分版权归 baiqiuzhang，原版权与许可完整保留在 `LICENSE`。与上游插件**不要同时安装**（两者都会占用 composer 区域）。

@@ -1,0 +1,9 @@
+- insert:
+    - id: opencode-quota-hud
+      name: 'dsh-opencode-quota-hud'
+      config:
+        plan: go
+        path: /opencode-usage
+        refreshSeconds: 60
+        apiKeyRef: OPENCODE_GO_API_KEY
+        usageUrl: https://opencode.ai/inference/go/v1/usage

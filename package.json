@@ -1,0 +1,69 @@
+{
+  "name": "dsh-opencode-quota-hud",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "dsh plugin: OpenCode Go quota (5h / week / month) pill immediately left of the composer model picker, shown only while an OpenCode model is selected. Host half keeps the official usage feed.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "opencode",
+    "usage",
+    "quota",
+    "billing"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.1 <0.2.0 || >=0.2.0 <0.3.0-0 || >=0.2.2-0 <0.3.0-0"
+  },
+  "author": "baiqiuzhang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baiqiuzhang/dsh-opencode-quota-hud.git"
+  },
+  "homepage": "https://github.com/baiqiuzhang/dsh-opencode-quota-hud#readme",
+  "bugs": {
+    "url": "https://github.com/baiqiuzhang/dsh-opencode-quota-hud/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dshhub": {
+    "schemaVersion": 1,
+    "displayName": "OpenCode quota HUD",
+    "summary": "Fork of dsh-opencode-usage-settings: drops the settings sub-page and shows the OpenCode Go 5h/week/month quota as a pill left of the composer model picker, only while an OpenCode model is selected.",
+    "tags": [
+      "usage",
+      "quota",
+      "opencode",
+      "composer"
+    ]
+  }
+}
